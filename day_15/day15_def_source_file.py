@@ -1,4 +1,4 @@
-FILEPATH = '../rows.txt'
+FILEPATH = 'rows.txt' #'../rows.txt'
 
 def get_todos(filepath=FILEPATH):  # it's only work when we call function (get_todos()) in new variable like : todos = get_todos()
     with open(filepath, 'r') as file_local:
