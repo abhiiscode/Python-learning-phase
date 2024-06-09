@@ -8,10 +8,11 @@ clock = sg.Text('', key='clock', text_color='pink')
 
 input_box = sg.InputText(tooltip="enter changed name", key="todo", border_width=2)
 
-add_button = sg.Button("Add")
+add_button = sg.Button("Add", size=10)
 complete_button = sg.Button("complete")
-exit_button = sg.Button("Exit", button_color='red')
 edit_button = sg.Button("Edit")
+exit_button = sg.Button("Exit", button_color='red', size=15)
+
 
 list_box = sg.Listbox(values=functions.get_todos(),
                       key='todos', enable_events=False,
